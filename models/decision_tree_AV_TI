@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="NoE <= 29.0\ngini = 0.163\nsamples = 2052\nvalue = [1868, 184]\nclass = Dirty", fillcolor="#e88d4d"] ;
+1 [label="P_mean <= 0.929\ngini = 0.485\nsamples = 148\nvalue = [87, 61]\nclass = Dirty", fillcolor="#f7d9c4"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+11 [label="gini = 0.287\nsamples = 46\nvalue = [38, 8]\nclass = Dirty", fillcolor="#ea9c63"] ;
+1 -> 11 ;
+12 [label="c18 <= 0.31\ngini = 0.499\nsamples = 102\nvalue = [49, 53]\nclass = Clean", fillcolor="#f0f8fd"] ;
+1 -> 12 ;
+13 [label="gini = 0.491\nsamples = 81\nvalue = [46, 35]\nclass = Dirty", fillcolor="#f9e1d0"] ;
+12 -> 13 ;
+14 [label="gini = 0.245\nsamples = 21\nvalue = [3, 18]\nclass = Clean", fillcolor="#5aade9"] ;
+12 -> 14 ;
+2 [label="D_mean <= 9.875\ngini = 0.121\nsamples = 1904\nvalue = [1781, 123]\nclass = Dirty", fillcolor="#e78a47"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="c29 <= 0.321\ngini = 0.108\nsamples = 1878\nvalue = [1770, 108]\nclass = Dirty", fillcolor="#e78945"] ;
+2 -> 3 ;
+5 [label="gini = 0.076\nsamples = 1672\nvalue = [1606, 66]\nclass = Dirty", fillcolor="#e68641"] ;
+3 -> 5 ;
+6 [label="c2 <= 0.236\ngini = 0.325\nsamples = 206\nvalue = [164, 42]\nclass = Dirty", fillcolor="#eca16c"] ;
+3 -> 6 ;
+7 [label="c26 <= 0.477\ngini = 0.203\nsamples = 166\nvalue = [147, 19]\nclass = Dirty", fillcolor="#e89153"] ;
+6 -> 7 ;
+9 [label="gini = 0.159\nsamples = 161\nvalue = [147, 14]\nclass = Dirty", fillcolor="#e78d4c"] ;
+7 -> 9 ;
+10 [label="gini = 0.0\nsamples = 5\nvalue = [0, 5]\nclass = Clean", fillcolor="#399de5"] ;
+7 -> 10 ;
+8 [label="gini = 0.489\nsamples = 40\nvalue = [17, 23]\nclass = Clean", fillcolor="#cbe5f8"] ;
+6 -> 8 ;
+4 [label="gini = 0.488\nsamples = 26\nvalue = [11, 15]\nclass = Clean", fillcolor="#cae5f8"] ;
+2 -> 4 ;
+}
